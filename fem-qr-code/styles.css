@@ -1,3 +1,29 @@
+/* outfit-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/outfit-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  src: url('assets/fonts/outfit-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+    --c-white: hsl(0, 0%, 100%);
+    --c-slate-300: hsl(212, 45%, 89%);
+    --c-slate-500: hsl(216, 15%, 48%);
+    --c-slate-900: hsl(218, 44%, 22%);
+    --color-background: var(--c-slate-300);
+    --color-card: var(--c-white);
+}
+
 *, 
 *::before, 
 *::after {
@@ -6,4 +32,23 @@
 
 body {
     margin: 0;
+    padding: 0;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    background-color: var(--color-background);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    display: grid;
+    place-items: center;
+    padding-block: 5rem;
+}
+
+.container {
+    max-width: 20rem;
+    background-color: var(--color-card);
 }
