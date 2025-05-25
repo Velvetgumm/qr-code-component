@@ -34,7 +34,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    font-size: 15px;
     background-color: var(--color-background);
+}
+
+h1 {
+    color: var(--c-slate-900);
+    font-size: 22px;
+}
+
+p {
+    color: var(--c-slate-500);
+    letter-spacing: 0.2;
 }
 
 img {
@@ -43,12 +54,27 @@ img {
 }
 
 .wrapper {
-    display: grid;
-    place-items: center;
-    padding-block: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-block: 12rem;
 }
 
 .container {
     max-width: 20rem;
     background-color: var(--color-card);
+    border-radius: 20px;
+    padding: 16px;
+    align-items: center;
+}
+
+.container__qr {
+    border-radius: 10px;
+}
+
+.container__text {
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 8px;
 }
